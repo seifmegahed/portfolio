@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 dist
+backups
 dist-ssr
 *.local
 
@@ -25,3 +26,7 @@ dist-ssr
 
 #Enviroment variables
 .env
+
+#Firebase
+.firebase
+firebase-debug.log
