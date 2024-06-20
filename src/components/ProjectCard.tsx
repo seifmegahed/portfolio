@@ -29,7 +29,7 @@ export default function ProjectCard(props: {
           display && parentDivRef.current?.classList.remove("scale-105");
         }}
       >
-        <div className="text-2xl font-bold text-white">{title}</div>
+        <div className="text-2xl font-bold text-white w-full">{title}</div>
       </div>
       <div className="p-3 sm:h-24 overflow-hidden">
         <div className="text-sm text-black/40">{description}</div>
