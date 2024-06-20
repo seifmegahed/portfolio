@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tags-grid {
+  /* display: grid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* grid-template-columns: repeat(auto-fill, 1fr); */
+  gap: 0.5rem;
+}
+
+.tag-component {
+  /* grid-column: span 2 / auto; */
+  padding: 1rem 2rem;
+  width: fit-content;
+}
