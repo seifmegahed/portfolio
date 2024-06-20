@@ -47,7 +47,7 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 text-slate-500 py-5 gap-6 h-full transition-all duration-500 ease-in-out">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 text-slate-500 py-5 sm:gap-6 gap-4 h-full transition-all duration-500 ease-in-out">
         {filteredProjects.map((project) => (
           <ProjectCard project={project} onFilterByTag={handleFilterByTag} />
         ))}
