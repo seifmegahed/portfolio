@@ -1,18 +1,34 @@
+import { useRef } from "react";
 import { ProjectDataType } from "../data/projects";
 import Tag from "./Tag";
 
+export interface ProjectCardDataType extends ProjectDataType {
+  display: boolean;
+}
+
 export default function ProjectCard(props: {
-  project: ProjectDataType;
+  project: ProjectCardDataType;
   onFilterByTag: (tag: string) => void;
 }) {
-  const { title, description, tags } = props.project;
-
+  const { title, description, tags, display } = props.project;
+  const parentDivRef = useRef<HTMLDivElement>(null);
   return (
     <div
+      ref={parentDivRef}
       key={title}
-      className=" w-56 h-96 bg-white rounded-3xl drop-shadow-lg overflow-hidden"
+      className={`w-56 h-96 bg-white rounded-3xl drop-shadow-lg overflow-hidden transition-all duration-500 ease-in-out ${
+        display ? "opacity-100" : "opacity-50"
+      }`}
     >
-      <div className="p-3 h-24 flex items-center justify-center bg-slate-600 cursor-pointer">
+      <div
+        className={`p-3 h-24 flex items-center justify-center bg-slate-600 cursor-pointer`}
+        onMouseOver={() => {
+          display && parentDivRef.current?.classList.add("scale-105");
+        }}
+        onMouseOut={() => {
+          display && parentDivRef.current?.classList.remove("scale-105");
+        }}
+      >
         <div className="text-lg font-bold text-center text-white">{title}</div>
       </div>
       <div className="p-3 h-24 overflow-hidden">
