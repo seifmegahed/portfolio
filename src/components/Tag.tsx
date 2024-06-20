@@ -9,6 +9,7 @@ export default function Tag(props: { title: string }) {
     py-1
     rounded-full
     cursor-pointer
+    hover:bg-slate-500 
     hover:scale-110
     hover:-translate-y-1
     pointer-events-auto
