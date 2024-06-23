@@ -7,7 +7,7 @@ export default function InputField(props: {
   textField?: boolean;
 }) {
   return (
-    <div className="w-full relative flex flex-col mb-2">
+    <div className="w-full relative flex flex-col">
       <div className="h-8"></div>
       {props?.textField ? (
         <textarea
@@ -37,6 +37,7 @@ export default function InputField(props: {
       >
         {props.label}
       </div>
+      <div className={`text-xs px-2 text-red-500 ${!props.error && "invisible"}`}>Required</div>  
     </div>
   );
 }

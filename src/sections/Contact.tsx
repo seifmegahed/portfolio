@@ -4,6 +4,12 @@ import SectionWrapper from "../components/SectionWrapper";
 import InputField from "../components/InputField";
 import { checkEmailValidity } from "../utils/validation";
 
+const errorsInitial = {
+  name: false,
+  email: false,
+  message: false,
+};
+
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -11,11 +17,7 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(
     sessionStorage.getItem("submitted") === "true"
   );
-  const [errors, setError] = useState({
-    name: false,
-    email: false,
-    message: false,
-  });
+  const [errors, setError] = useState(errorsInitial);
   function resetForm() {
     setName("");
     setEmail("");
@@ -26,16 +28,23 @@ export default function Contact() {
     if (name.length === 0) {
       valid = false;
       setError((prev) => ({ ...prev, name: true }));
+    } else {
+      setError((prev) => ({ ...prev, name: false }));
     }
     if (checkEmailValidity(email) === false) {
       valid = false;
+      alert("Please enter a valid email address.");
       setError((prev) => ({ ...prev, email: true }));
+    } else {
+      setError((prev) => ({ ...prev, email: false }));
     }
     if (message.length === 0) {
       valid = false;
       setError((prev) => ({ ...prev, message: true }));
+    } else {
+      setError((prev) => ({ ...prev, message: false }));
     }
-    console.log(valid);
+
     return valid;
   }
   const handleSubmit = async () => {
@@ -67,7 +76,7 @@ export default function Contact() {
   return (
     <SectionWrapper id="contact">
       <SectionTitle title="Contact" />
-      <div className="w-full h-full max-w-96 flex flex-col items-center md:justify-center text-gray-700 gap-4">
+      <div className="w-full h-full max-w-96 flex flex-col items-center md:justify-center text-gray-700">
         <InputField
           error={errors.name}
           label="Name"
@@ -87,7 +96,7 @@ export default function Contact() {
           onchange={setMessage}
           textField
         />
-        <div className="flex justify-end items-center w-full">
+        <div className="flex justify-end items-center w-full mt-6">
           <button
             className={
               submitted
@@ -100,7 +109,7 @@ export default function Contact() {
                 handleSubmit();
               }
             }}
-            disabled={submitted}
+            // disabled={submitted}
           >
             {submitted ? "Sent" : "Send"}
           </button>
