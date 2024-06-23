@@ -5,7 +5,7 @@
       "path": "azzas-handmade",
       "year": 2024,
       "description": "Web Store for handmade jewelry and accessories",
-      "tags": ["Firebase", "React", "Tailwind CSS", "Auth"]
+      "tags": ["Firebase", "TypeScript", "React", "Tailwind CSS", "Auth"]
     },
     {
       "title": "Bend 24",
@@ -72,7 +72,7 @@
       "path": "bend-23",
       "year": 2020,
       "description": "Audio delay pedal with a low frequency oscillator",
-      "tags": ["C/C++", "WaveTable", "PCB Design", "3D Modeling", "ThreeJS"]
+      "tags": ["C/C++", "WaveTable", "PCB Design", "3D Modeling", "React", "TypeScript", "ThreeJS"]
     },
     {
       "title": "Monstera Speeduino",
