@@ -24,7 +24,7 @@ function LinkTypeSelector(props: {
     );
   if (link.hash)
     return (
-      <HashLink to={link.path}>
+      <HashLink smooth to={link.path}>
         <span className="text-sm hover:underline">{link.title}</span>
       </HashLink>
     );
