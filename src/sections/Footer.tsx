@@ -49,7 +49,7 @@ function FooterLinksSection(props: {
     <div className="flex flex-col gap-1 max-w-64 w-full">
       <span className="font-normal">{props.sectionTitle}</span>
       <div className="flex flex-col gap-1 w-full flex-wrap">
-        <hr className="w-48 border-slate-500" />
+        <hr className="sm:w-48 border-slate-500" />
         {props.links.map((link) => (
           <div key={link.title} className="flex gap-1 text-slate-400">
             {link.icon}
