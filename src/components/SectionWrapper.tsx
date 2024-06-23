@@ -6,7 +6,7 @@ export default function SectionWrapper(props: {
 }) {
   return (
     <div
-      className="md:col-span-2 min-h-screen w-full flex flex-col items-center"
+      className="md:col-span-2 min-h-screen h-fit w-full flex flex-col items-center"
       id={props.id}
     >
       {props.children}

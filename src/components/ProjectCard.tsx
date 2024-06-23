@@ -16,12 +16,12 @@ export default function ProjectCard(props: {
     <div
       ref={parentDivRef}
       key={title}
-      className={`sm:w-56 w-full sm:h-90 bg-white font-light rounded-xl drop-shadow-lg overflow-hidden transition-all duration-500 ease-in-out ${
+      className={`sm:w-56 w-full sm:h-90 bg-white font-light rounded-xl drop-shadow-lg transition-all duration-500 ease-in-out ${
         display ? "opacity-100" : "opacity-50"
       }`}
     >
       <div
-        className="p-5 sm:h-24 flex items-center justify-start bg-slate-600 cursor-pointer"
+        className="p-5 rounded-t-xl sm:h-24 flex items-center justify-start bg-slate-600 cursor-pointer"
         onMouseOver={() => {
           display && parentDivRef.current?.classList.add("scale-105");
         }}

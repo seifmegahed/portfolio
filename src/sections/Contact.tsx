@@ -102,14 +102,14 @@ export default function Contact() {
           onchange={setMessage}
           textField
         />
-        <div className="grid h-fit w-full md:grid-cols-2 gap-4">
+        <div className="grid w-full md:grid-cols-2 gap-4">
           <HCaptcha
             data-callback={() => console.log("success")}
             sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
             reCaptchaCompat={false}
             onVerify={onHCaptchaChange}
           />
-          <div className="flex justify-end h-full items-center w-full">
+          <div className="flex justify-end items-center w-full">
             <button
               className={
                 submitted
