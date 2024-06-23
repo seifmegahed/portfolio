@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Footer from "../sections/Footer";
 
 export default function PageWrapper(props: {
   navbar: ReactNode;
@@ -10,6 +11,7 @@ export default function PageWrapper(props: {
       <div className="grid md:grid-cols-2 grid-cols-1 max-w-screen-lg w-full p-4 gap-10">
         {props.children}
       </div>
+      <Footer />
     </div>
   );
 }

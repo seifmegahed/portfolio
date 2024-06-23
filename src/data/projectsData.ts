@@ -9,14 +9,14 @@ export type ProjectDataType = {
 export const projects: ProjectDataType[] = [
   {
     title: "Azza's Handmade",
-    path: "/azzas-handmade",
+    path: "azzas-handmade",
     year: 2024,
     description: "Web Store for handmade jewelry and accessories",
     tags: ["Firebase", "React", "Tailwind CSS", "Auth"],
   },
   {
     title: "Bend 24",
-    path: "/bend-24",
+    path: "bend-24",
     year: 2023,
     description: "Startup that manufactures interactive LED floor panel games",
     tags: [
