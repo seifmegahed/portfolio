@@ -29,7 +29,7 @@ function LinkTypeSelector(props: {
       </HashLink>
     );
   return (
-    <Link to={link.path}>
+    <Link to={"/" + link.path}>
       <span className="text-sm hover:underline">{link.title}</span>
     </Link>
   );

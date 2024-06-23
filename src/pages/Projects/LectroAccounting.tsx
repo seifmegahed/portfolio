@@ -1,12 +1,18 @@
 import Navbar from "../../components/Navbar";
 import PageWrapper from "../../components/PageWrapper";
+import SectionTitle from "../../components/SectionTitle";
+import SectionWrapper from "../../components/SectionWrapper";
 
 export default function LectroAccounting() {
   return (
     <PageWrapper navbar={<Navbar />}>
-      <div className="w-full h-full flex items-center justify-center">
-        Coming soon!
-      </div>
+      <SectionWrapper id="/lectro-accounting">
+        <SectionTitle title="Lectro Accounting" />
+        <div className="w-full h-full flex items-center flex-col max-w-screen-lg justify-center text-center gap-5">
+          <p>Google Sheets based accounting system for Lectro</p>
+          <p>Coming Soon!</p>
+        </div>
+      </SectionWrapper>
     </PageWrapper>
   );
 }

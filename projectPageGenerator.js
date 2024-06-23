@@ -14,11 +14,21 @@ const projectPageTemplate = readFileSync(
 );
 
 export function generateProjectPage(project) {
-  const { componentName, fileName, filePath } = project;
+  const {
+    componentName,
+    fileName,
+    filePath,
+    componentPath,
+    description,
+    title,
+  } = project;
   if (!existsSync(filePath) || overwrite) {
     console.log("Generating " + fileName);
     const projectPage = projectPageTemplate
       .replace("COMPONENT_NAME", componentName)
+      .replace("COMPONENT_ID", componentPath)
+      .replace("COMPONENT_TITLE", title)
+      .replace("COMPONENT_DESCRIPTION", description)
       .replace(/\.\.\//g, "../../");
     writeFileSync(filePath, projectPage);
   }
@@ -29,13 +39,15 @@ const projects = data.projectsJSON.map((project) => {
   const fileName = componentName + ".tsx";
   const filePath = join(__dirname, "src/pages/projects/", fileName);
   const componentElement = `<${componentName} />`;
-  const componentPath = "/" + project.path; 
+  const componentPath = "/" + project.path;
   return {
     componentElement,
     componentPath,
     componentName,
+    title: project.title,
     fileName,
     filePath,
+    description: project.description,
   };
 });
 
@@ -50,7 +62,12 @@ projects.forEach((project) => {
 indexPageContent += "\nexport const projectsComponents = [\n";
 
 projects.forEach((project) => {
-  indexPageContent += "  { \n    component: <" + project.componentName + " />,\n    path: \"" + project.componentPath + "\",\n  },\n";
+  indexPageContent +=
+    "  { \n    component: <" +
+    project.componentName +
+    ' />,\n    path: "' +
+    project.componentPath +
+    '",\n  },\n';
 });
 
 indexPageContent += "];\n";
