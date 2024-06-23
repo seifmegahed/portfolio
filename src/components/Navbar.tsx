@@ -3,11 +3,11 @@ import { navbarLinks } from "../data/navbarData";
 
 export default function Navbar() {
   return (
-    <div className="flex justify-end items-center w-full sm:text-2xl text-xl font-thin ">
+    <div className="flex justify-end items-center w-full sm:text-2xl text-lg font-thin ">
       {navbarLinks.map((path) => (
-        <div className="flex items-center">
+        <div key={path.path} className="flex items-center">
           <Link smooth to={path.path} key={path.name}>
-            <p className="cursor-pointer hover:bg-white/45 p-4 sm:text-3xl text-2xl">
+            <p className="cursor-pointer hover:bg-white/45 sm:p-4 p-2">
               {path.name.toUpperCase()}
             </p>
           </Link>

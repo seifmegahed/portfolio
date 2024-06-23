@@ -52,7 +52,7 @@ export default function Projects() {
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 text-slate-500 py-5 sm:gap-6 gap-4 h-full transition-all duration-500 ease-in-out auto">
         {filteredProjects.map((project) => (
-          <ProjectCard project={project} onFilterByTag={handleFilterByTag} />
+          <ProjectCard key={project.title} project={project} onFilterByTag={handleFilterByTag} />
         ))}
       </div>
     </SectionWrapper>

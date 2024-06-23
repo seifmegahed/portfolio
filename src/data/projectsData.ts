@@ -44,6 +44,8 @@ export const projects: ProjectDataType[] = [
       "React Query",
       "Firestore",
       "Auth",
+      "Vitest",
+      "Cypress",
     ],
   },
   {

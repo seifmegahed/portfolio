@@ -1,6 +1,8 @@
 export default function InputField(props: {
   label: string;
   value: string;
+  error: boolean;
+  required?: boolean;
   onchange: (value: string) => void;
   textField?: boolean;
 }) {
@@ -9,14 +11,16 @@ export default function InputField(props: {
       <div className="h-8"></div>
       {props?.textField ? (
         <textarea
+          required={props.required}
           value={props.value}
           onChange={(e) => props.onchange(e.target.value)}
           placeholder={props.label}
           className="peer w-full p-3 focus:outline-none rounded-xl resize-none focus:placeholder-white"
-          rows={4}
+          rows={5}
         />
       ) : (
         <input
+          required={props.required}
           value={props.value}
           onChange={(e) => props.onchange(e.target.value)}
           type="text"
