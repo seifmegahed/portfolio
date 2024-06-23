@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import SectionTitle from "../components/SectionTitle";
 import SectionWrapper from "../components/SectionWrapper";
-import { aboutData, skillsData } from "../data/aboutData";
+import { aboutData, skillsData, tldr } from "../data/aboutData";
 
 const ParagraphTitle = (props: { children: string }) => (
   <p className="text-lg w-full font-bold">{props.children}</p>
@@ -12,37 +12,30 @@ export default function About() {
   const [trigger, setTrigger] = useState(false);
 
   useEffect(() => {
-    if (!trigger) {
-      const interval = setInterval(() => {
+    const interval = setInterval(() => {
+      if (!trigger) {
         const skillsSection = skillsSectionRef.current;
         if (skillsSection) {
           const skillsSectionHeight =
             window.innerHeight - skillsSection.getBoundingClientRect().top;
           if (skillsSectionHeight > 300) {
-            setTrigger(true);
-            console.log("trigger");
             clearInterval(interval);
+            setTrigger(true);
           }
         }
-      }, 100);
-    }
+      }
+    }, 100);
+    return () => {
+      clearInterval(interval);
+    };
   }, [trigger]);
 
-  const PartA = [
-    aboutData[0],
-    aboutData[1],
-    aboutData[2],
-    aboutData[3],
-    aboutData[4],
-    aboutData[5],
-  ];
-  const PartB = [aboutData[6]];
   return (
     <SectionWrapper id="about">
       <SectionTitle title="About" />
       <div className="grid md:grid-cols-2 md:gap-5 gap-2 w-full">
         <div className="flex flex-col gap-3">
-          {PartA.map((data) => (
+          {aboutData.map((data) => (
             <div key={data.title}>
               <ParagraphTitle>{data.title}</ParagraphTitle>
               <p>{data.content}</p>
@@ -50,12 +43,11 @@ export default function About() {
           ))}
         </div>
         <div className="flex flex-col gap-2">
-          {PartB.map((data) => (
-            <div key={data.title}>
-              <ParagraphTitle>{data.title}</ParagraphTitle>
-              <p>{data.content}</p>
-            </div>
-          ))}
+          <div>
+            <ParagraphTitle>{tldr.title}</ParagraphTitle>
+            <p>{tldr.content}</p>
+          </div>
+
           <div ref={skillsSectionRef}>
             <ParagraphTitle>Skills</ParagraphTitle>
             <div className="grid lg:grid-cols-2  md:grid-cols-1 sm:grid-cols-2 gap-4 h-full">
