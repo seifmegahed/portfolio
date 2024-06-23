@@ -1,16 +1,12 @@
-import Hero from "./sections/Hero";
-import Projects from "./sections/Projects";
-import Portrait from "./sections/Portrait";
+import { Navigate, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className=" flex justify-center w-screen h-full text-white font-inter font-thin bg-gradient-to-br from-slate-700 to-white">
-      <div className="grid md:grid-cols-2 grid-cols-1 max-w-screen-lg w-full h-full p-4 gap-10">
-        <Hero />
-        <Portrait />
-        <Projects />
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/*" element={<Navigate to="/" />} />
+    </Routes>
   );
 }
 

@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { ProjectDataType } from "../data/projects";
+import { ProjectDataType } from "../data/projectsData";
 import Tag from "./Tag";
 
 export interface ProjectCardDataType extends ProjectDataType {
@@ -16,7 +16,7 @@ export default function ProjectCard(props: {
     <div
       ref={parentDivRef}
       key={title}
-      className={`sm:w-56 w-full sm:h-90 bg-white font-light rounded-3xl drop-shadow-lg overflow-hidden transition-all duration-500 ease-in-out ${
+      className={`sm:w-56 w-full sm:h-90 bg-white font-light rounded-xl drop-shadow-lg overflow-hidden transition-all duration-500 ease-in-out ${
         display ? "opacity-100" : "opacity-50"
       }`}
     >
@@ -34,7 +34,7 @@ export default function ProjectCard(props: {
       <div className="p-3 sm:h-24 overflow-hidden">
         <div className="text-sm text-black/40">{description}</div>
       </div>
-      <div className="p-3">
+      <div className="p-3 h-full">
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <div key={title + tag} onClick={() => props.onFilterByTag(tag)}>
