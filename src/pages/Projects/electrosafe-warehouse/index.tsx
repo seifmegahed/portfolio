@@ -1,8 +1,8 @@
-import Navbar from "../../components/Navbar";
-import PageWrapper from "../../components/PageWrapper";
-import SectionTitle from "../../components/SectionTitle";
-import SectionWrapper from "../../components/SectionWrapper";
-import ExternalLink from "../../icons/ExternalLink";
+import Navbar from "../../../components/Navbar";
+import PageWrapper from "../../../components/PageWrapper";
+import SectionTitle from "../../../components/SectionTitle";
+import SectionWrapper from "../../../components/SectionWrapper";
+import ExternalLink from "../../../icons/ExternalLink";
 
 const pageImageMobileURL =
   "https://utfs.io/f/79713d41-24e0-44ab-a0f3-7a558aab2cb0-1x9ybj.JPG";

@@ -1,7 +1,7 @@
-import Navbar from "../../components/Navbar";
-import PageWrapper from "../../components/PageWrapper";
-import SectionTitle from "../../components/SectionTitle";
-import SectionWrapper from "../../components/SectionWrapper";
+import Navbar from "../../../components/Navbar";
+import PageWrapper from "../../../components/PageWrapper";
+import SectionTitle from "../../../components/SectionTitle";
+import SectionWrapper from "../../../components/SectionWrapper";
 
 export default function NedapLuna() {
   return (
