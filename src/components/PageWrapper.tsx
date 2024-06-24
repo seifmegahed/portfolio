@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import Footer from "../sections/Footer";
+import Footer from "./Footer";
 
 export default function PageWrapper(props: {
   navbar: ReactNode;

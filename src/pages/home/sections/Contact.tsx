@@ -1,8 +1,8 @@
 import { useState } from "react";
-import SectionTitle from "../components/SectionTitle";
-import SectionWrapper from "../components/SectionWrapper";
-import InputField from "../components/InputField";
-import { checkEmailValidity } from "../utils/validation";
+import SectionTitle from "../../../components/SectionTitle";
+import SectionWrapper from "../../../components/SectionWrapper";
+import InputField from "../../../components/InputField";
+import { checkEmailValidity } from "../../../utils/validation";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 const errorsInitial = {
