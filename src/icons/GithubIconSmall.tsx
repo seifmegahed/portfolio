@@ -7,6 +7,7 @@ export default function GithubIconSmall() {
       width="24"
       height="25"
       viewBox="0 0 32 32"
+      fill="currentColor"
     >
       <path
         fill-rule="evenodd"
