@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
-import { projectsComponents } from "./pages/Projects";
+import { projectsComponents } from "./pages/projects";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
