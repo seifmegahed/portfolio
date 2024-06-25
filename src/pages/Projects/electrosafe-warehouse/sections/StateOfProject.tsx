@@ -10,7 +10,7 @@ export default function StateOfProject() {
         time I was busy at work, so I left the project on hold. I did however,
         learn a lot during the project.
       </p>
-      <div className="flex gap-2">
+      <div className="flex gap-2 items-center">
         <p>Check out the source code on Github</p>
         <ExternalLink href="https://github.com/seifmegahed/electrosafe" />
       </div>

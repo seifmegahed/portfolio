@@ -3,7 +3,7 @@ import ExternalLink from "../../../../components/ExternalLink";
 export default function ExploreWebApp() {
   return (
     <div className="flex flex-col items-center w-full py-3 gap-3">
-      <div className="w-full text-xl font-normal flex gap-1">
+      <div className="w-full text-xl font-normal flex items-center gap-2">
         <p>Take the web app for a spin</p>
         <ExternalLink href="https://electrosafe.web.app/" />
       </div>

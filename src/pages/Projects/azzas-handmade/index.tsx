@@ -1,14 +1,10 @@
+import CodeSnippet from "../../../components/CodeSnippet";
 import ExternalLink from "../../../components/ExternalLink";
 import Navbar from "../../../components/Navbar";
 import PageWrapper from "../../../components/PageWrapper";
 import SectionSubtitle from "../../../components/SectionSubtitle";
 import SectionTitle from "../../../components/SectionTitle";
 import SectionWrapper from "../../../components/SectionWrapper";
-
-import Highlight from "react-highlight";
-
-import "highlight.js/styles/atom-one-dark.css";
-// import "highlight.js/styles/rainbow.css";
 
 
 const codeSnippet = `
@@ -30,7 +26,7 @@ const codeSnippet = `
     });
   }, []);
 
-`
+`;
 
 export default function AzzasHandmade() {
   return (
@@ -101,9 +97,7 @@ function ProjectDescription() {
         </p>
       </section>
       <section className="mb-4">
-        <Highlight className="typescript rounded-xl">
-          {codeSnippet}
-        </Highlight>
+        <CodeSnippet code={codeSnippet} />
       </section>
 
       <section className="mb-4">
@@ -116,10 +110,10 @@ function ProjectDescription() {
       </section>
 
       <section className="mb-4">
-        <p className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center">
           Check out the source code on GitHub
           <ExternalLink href="https://github.com/seifmegahed/azzashandmade" />
-        </p>
+        </div>
       </section>
     </div>
   );
