@@ -5,6 +5,9 @@ export const photoGalleryURLs = [
   "https://utfs.io/f/cc40cae9-913b-4ec1-8369-a2d8178e3d11-qflmt4.jpg",
 ];
 
+export const frontImageURL =
+  "https://utfs.io/f/b9d9b1a1-61bf-40a8-a60c-2317b5efb1e2-7grfip.png";
+
 export const introBody =
   "Bend started out as a passion project to create electronic musical instruments, and I have developed a couple of synth prototypes that I really enjoyed playing. After a while, I decided to try to make a commercial product, and an audio effect pedal seemed feasible.";
 
