@@ -33,3 +33,5 @@ stats.html
 firebase-debug.log
 
 .vscode
+
+*.gltf

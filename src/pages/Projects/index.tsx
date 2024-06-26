@@ -12,43 +12,43 @@ import NedapLuna from "./nedap-luna";
 import SmallSizeHolland from "./small-size-holland";
 
 export const projectsComponents = [
-  { 
+  {
     component: <AzzasHandmade />,
     path: "/azzas-handmade",
   },
-  { 
+  {
     component: <Bend24 />,
     path: "/bend-24",
   },
-  { 
+  {
     component: <ElectrosafeWarehouse />,
     path: "/electrosafe-warehouse",
   },
-  { 
+  {
     component: <LectroLED />,
     path: "/lectro-led",
   },
-  { 
+  {
     component: <LectroAccounting />,
     path: "/lectro-accounting",
   },
-  { 
+  {
     component: <Bend23 />,
     path: "/bend-23",
   },
-  { 
+  {
     component: <MonsteraSpeeduino />,
     path: "/monstera-speeduino",
   },
-  { 
+  {
     component: <NedapWanda />,
     path: "/nedap-wanda",
   },
-  { 
+  {
     component: <NedapLuna />,
     path: "/nedap-luna",
   },
-  { 
+  {
     component: <SmallSizeHolland />,
     path: "/small-size-holland",
   },

@@ -1,3 +1,5 @@
+import { lazy } from "react";
+
 import Navbar from "../../../components/Navbar";
 import PageWrapper from "../../../components/PageWrapper";
 import SectionSubtitle from "../../../components/SectionSubtitle";
@@ -7,6 +9,7 @@ import Bend23Description from "./sections/Bend23Description";
 import SampleAudio from "./sections/SampleAudio";
 import ImageGallery from "./sections/ImageGallery";
 import FrontImage from "./sections/FrontImage";
+const ThreeCanvas = lazy(() => import("./sections/Three"));
 
 export default function Bend23() {
   return (
@@ -18,6 +21,11 @@ export default function Bend23() {
           <div className="flex gap-6 md:flex-row-reverse flex-col">
             <FrontImage />
             <Bend23Description />
+          </div>
+          <div className="h-[600px] w-full relative overflow-clip">
+            <div className="absolute top-[-300px] left-0 w-full h-[1200px]">
+              <ThreeCanvas />
+            </div>
           </div>
           <SampleAudio />
           <ImageGallery />
