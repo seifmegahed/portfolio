@@ -57,14 +57,15 @@ const Pedal = ({ ...props }: GroupProps) => {
       ref={pedalRef}
       onPointerEnter={() => setPause(true)}
       onPointerLeave={() => setPause(false)}
-    >
+      >
       <mesh
         castShadow
         geometry={nodes.PlateB.geometry}
         material={materials["Powder Black 2"]}
         position={[0.395, -0.354, 0.549]}
         scale={0.064}
-      />
+        onClick={() => setPause((prev) => !prev)}
+        />
       <mesh
         castShadow
         receiveShadow
@@ -72,6 +73,7 @@ const Pedal = ({ ...props }: GroupProps) => {
         material={materials["Powder Black"]}
         position={[0.126, 0.597, -0.292]}
         scale={0.064}
+        onClick={() => setPause((prev) => !prev)}
       />
       <group position={[1.327, 0.06, 2.178]} scale={0.064}>
         <mesh

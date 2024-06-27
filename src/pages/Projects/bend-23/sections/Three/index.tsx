@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { lazy } from "react";
 import * as THREE from "three";
+// import { Model } from "./Bend23";
 const Pedal = lazy(() => import("./Pedal3"));
 
 const ThreeCanvas = () => {
@@ -26,6 +27,7 @@ const ThreeCanvas = () => {
         rotation={[Math.PI * 0.5, 0, Math.PI * 0]}
         position={[0, 0.2, -4]}
       />
+      {/* <Model rotation={[Math.PI * 0, Math.PI * 1, Math.PI * 1]} /> */}
     </Canvas>
   );
 };

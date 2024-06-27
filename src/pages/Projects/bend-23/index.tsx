@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import { Suspense, lazy } from "react";
 
 import Navbar from "../../../components/Navbar";
 import PageWrapper from "../../../components/PageWrapper";
@@ -9,6 +9,7 @@ import Bend23Description from "./sections/Bend23Description";
 import SampleAudio from "./sections/SampleAudio";
 import ImageGallery from "./sections/ImageGallery";
 import FrontImage from "./sections/FrontImage";
+import Loader from "../../../components/Loader";
 const ThreeCanvas = lazy(() => import("./sections/Three"));
 
 export default function Bend23() {
@@ -19,15 +20,21 @@ export default function Bend23() {
         <SectionSubtitle subtitle="Audio delay pedal with a low frequency oscillator" />
         <div className="flex gap-6 flex-col">
           <div className="flex gap-6 md:flex-row-reverse flex-col">
-            <FrontImage />
+            <Suspense fallback={<Loader />}>
+              <FrontImage />
+            </Suspense>
             <Bend23Description />
           </div>
           <div className="h-[600px] w-full relative overflow-clip">
-            <div className="absolute top-[-300px] left-0 w-full h-[1200px]">
-              <ThreeCanvas />
-            </div>
+            <Suspense fallback={<Loader />}>
+              <div className="absolute top-[-300px] left-0 w-full h-[1200px]">
+                <ThreeCanvas />
+              </div>
+            </Suspense>
           </div>
-          <SampleAudio />
+          <Suspense fallback={<Loader />}>
+            <SampleAudio />
+          </Suspense>
           <ImageGallery />
         </div>
       </SectionWrapper>
