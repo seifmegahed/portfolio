@@ -6,7 +6,6 @@ import ElectrosafeWarehouse from "./electrosafe-warehouse";
 import LectroLED from "./lectro-led";
 import LectroAccounting from "./lectro-accounting";
 import Bend23 from "./bend-23";
-import MonsteraSpeeduino from "./monstera-speeduino";
 import NedapWanda from "./nedap-wanda";
 import NedapLuna from "./nedap-luna";
 import SmallSizeHolland from "./small-size-holland";
@@ -35,10 +34,6 @@ export const projectsComponents = [
   {
     component: <Bend23 />,
     path: "/bend-23",
-  },
-  {
-    component: <MonsteraSpeeduino />,
-    path: "/monstera-speeduino",
   },
   {
     component: <NedapWanda />,
