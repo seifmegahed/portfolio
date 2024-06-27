@@ -21,6 +21,6 @@ const utfs = "https://utfs.io/f/";
 
 export const images = {
   transactions: utfs + "c8303cdd-6f68-46fa-9b67-9d40807886eb-blggvn.png",
-  transaction: utfs + "31b2e8ad-518e-4f68-bfa1-937f869aaf49-1x0rdy.png",
+  transaction: utfs + "3aa80d16-64c9-4d93-8aa2-e255d9fed75e-1x0rdy.png",
   report: utfs + "a6d5b0c1-2f56-48ec-afd8-70caceb6bf73-2x62jw.png",
 };
