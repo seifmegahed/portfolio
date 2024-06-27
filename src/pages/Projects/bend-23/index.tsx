@@ -10,6 +10,8 @@ import SampleAudio from "./sections/SampleAudio";
 import ImageGallery from "./sections/ImageGallery";
 import FrontImage from "./sections/FrontImage";
 import Loader from "../../../components/Loader";
+import ErrorBoundary from "../../../components/ErrorBoudary";
+import ErrorComponent from "../../../components/ErrorComponent";
 const ThreeCanvas = lazy(() => import("./sections/Three"));
 
 export default function Bend23() {
@@ -26,11 +28,13 @@ export default function Bend23() {
             <Bend23Description />
           </div>
           <div className="h-[600px] w-full relative overflow-clip">
-            <Suspense fallback={<Loader />}>
-              <div className="absolute top-[-300px] left-0 w-full h-[1200px]">
-                <ThreeCanvas />
-              </div>
-            </Suspense>
+            <ErrorBoundary fallback={<ErrorComponent message="Error loading 3D canvas" />}>
+              <Suspense fallback={<Loader />}>
+                <div className="absolute top-[-300px] left-0 w-full h-[1200px]">
+                  <ThreeCanvas />
+                </div>
+              </Suspense>
+            </ErrorBoundary>
           </div>
           <Suspense fallback={<Loader />}>
             <SampleAudio />
