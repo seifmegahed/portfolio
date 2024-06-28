@@ -14,11 +14,10 @@ function App() {
         {projectsComponents.map((project) => (
           <Route
             path={project.path}
-            element={<Suspense fallback={<Loader />}>
-              {project.component}
-            </Suspense>}
+            element={
+              <Suspense fallback={<Loader />}>{project.component}</Suspense>
+            }
             key={project.path}
-            
           />
         ))}
       </Routes>

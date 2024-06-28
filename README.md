@@ -13,9 +13,9 @@
 - [ ] Small Size Holland
 
 **Other**
+- [x] Add Google Analytics
 - [ ] Add proper suspense
 - [ ] Add Error boundaries to critical components
-- [ ] Add Google Analytics
 - [ ] Add Error Fallback Page
 
 
