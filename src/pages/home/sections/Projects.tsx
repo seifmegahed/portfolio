@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import ProjectCard, {
   ProjectCardDataType,
-} from "../../../components/ProjectCard";
-import { projects } from "../../../data/projectsData";
-import Tag from "../../../components/Tag";
-import SectionTitle from "../../../components/SectionTitle";
-import SectionWrapper from "../../../components/SectionWrapper";
+} from "@components/ProjectCard";
+import { projects } from "@data/projectsData";
+import Tag from "@components/Tag";
+import SectionTitle from "@components/SectionTitle";
+import SectionWrapper from "@components/SectionWrapper";
 
 const initialProjects = projects.map((project) => ({
   ...project,

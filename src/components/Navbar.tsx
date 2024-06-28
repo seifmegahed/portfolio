@@ -1,5 +1,5 @@
 import { HashLink as Link } from 'react-router-hash-link';
-import { navbarLinks } from "../data/navbarData";
+import { navbarLinks } from "@data/navbarData";
 
 export default function Navbar() {
   return (

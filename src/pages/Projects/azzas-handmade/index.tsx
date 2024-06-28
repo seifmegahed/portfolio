@@ -1,10 +1,10 @@
-import CodeSnippet from "../../../components/CodeSnippet";
-import ExternalLink from "../../../components/ExternalLink";
-import Navbar from "../../../components/Navbar";
-import PageWrapper from "../../../components/PageWrapper";
-import SectionSubtitle from "../../../components/SectionSubtitle";
-import SectionTitle from "../../../components/SectionTitle";
-import SectionWrapper from "../../../components/SectionWrapper";
+import CodeSnippet from "@components/CodeSnippet";
+import ExternalLink from "@components/ExternalLink";
+import Navbar from "@components/Navbar";
+import PageWrapper from "@components/PageWrapper";
+import SectionSubtitle from "@components/SectionSubtitle";
+import SectionTitle from "@components/SectionTitle";
+import SectionWrapper from "@components/SectionWrapper";
 
 
 const codeSnippet = `

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import SectionTitle from "../../../components/SectionTitle";
-import SectionWrapper from "../../../components/SectionWrapper";
-import { aboutData, skillsData, tldr } from "../../../data/aboutData";
+import SectionTitle from "@components/SectionTitle";
+import SectionWrapper from "@components/SectionWrapper";
+import { aboutData, skillsData, tldr } from "@data/aboutData";
 
 const ParagraphTitle = (props: { children: string }) => (
   <p className="text-lg w-full font-bold">{props.children}</p>

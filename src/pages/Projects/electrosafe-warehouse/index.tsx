@@ -1,8 +1,8 @@
-import Navbar from "../../../components/Navbar";
-import PageWrapper from "../../../components/PageWrapper";
-import SectionTitle from "../../../components/SectionTitle";
-import SectionWrapper from "../../../components/SectionWrapper";
-import SectionSubtitle from "../../../components/SectionSubtitle";
+import Navbar from "@components/Navbar";
+import PageWrapper from "@components/PageWrapper";
+import SectionTitle from "@components/SectionTitle";
+import SectionWrapper from "@components/SectionWrapper";
+import SectionSubtitle from "@components/SectionSubtitle";
 
 import Introduction from "./sections/Introduction";
 import StateOfProject from "./sections/StateOfProject";

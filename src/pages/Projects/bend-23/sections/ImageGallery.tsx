@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { photoGalleryURLs } from "../data/data";
-import Loader from "../../../../components/Loader";
+import Loader from "@components/Loader";
 
 export default function ImageGallery() {
   return (

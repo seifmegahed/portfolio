@@ -1,9 +1,11 @@
+import { Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
+
+import ScrollToTop from "@components/ScrollToTop";
+import Loader from "@components/Loader";
+
 import Home from "./pages/home";
 import { projectsComponents } from "./pages/projects";
-import ScrollToTop from "./components/ScrollToTop";
-import { Suspense } from "react";
-import Loader from "./components/Loader";
 
 function App() {
   return (

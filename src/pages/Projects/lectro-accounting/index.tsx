@@ -1,8 +1,8 @@
-import Navbar from "../../../components/Navbar";
-import PageWrapper from "../../../components/PageWrapper";
-import SectionSubtitle from "../../../components/SectionSubtitle";
-import SectionTitle from "../../../components/SectionTitle";
-import SectionWrapper from "../../../components/SectionWrapper";
+import Navbar from "@components/Navbar";
+import PageWrapper from "@components/PageWrapper";
+import SectionSubtitle from "@components/SectionSubtitle";
+import SectionTitle from "@components/SectionTitle";
+import SectionWrapper from "@components/SectionWrapper";
 import AccountingBody from "./sections/body";
 
 export default function LectroAccounting() {

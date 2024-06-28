@@ -2,9 +2,9 @@ import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-import { projects } from "../data/projectsData";
-import { navbarLinks } from "../data/navbarData";
-import GithubIconSmall from "../icons/GithubIconSmall";
+import { projects } from "@data/projectsData";
+import { navbarLinks } from "@data/navbarData";
+import GithubIconSmall from "@icons/GithubIconSmall";
 
 function LinkTypeSelector(props: {
   link: {

@@ -1,4 +1,4 @@
-import ExternalLinkIcon from "../icons/ExternalLinkIcon";
+import ExternalLinkIcon from "@icons/ExternalLinkIcon";
 
 export default function ExternalLink(props: { href?: string }) {
   return (

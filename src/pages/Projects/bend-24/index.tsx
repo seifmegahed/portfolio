@@ -1,9 +1,9 @@
-import ExternalLink from "../../../components/ExternalLink";
-import Navbar from "../../../components/Navbar";
-import PageWrapper from "../../../components/PageWrapper";
-import SectionSubtitle from "../../../components/SectionSubtitle";
-import SectionTitle from "../../../components/SectionTitle";
-import SectionWrapper from "../../../components/SectionWrapper";
+import ExternalLink from "@components/ExternalLink";
+import Navbar from "@components/Navbar";
+import PageWrapper from "@components/PageWrapper";
+import SectionSubtitle from "@components/SectionSubtitle";
+import SectionTitle from "@components/SectionTitle";
+import SectionWrapper from "@components/SectionWrapper";
 import { images, text } from "./data/data";
 
 export default function Bend24() {

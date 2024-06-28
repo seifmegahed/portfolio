@@ -1,17 +1,18 @@
 import { Suspense, lazy } from "react";
 
-import Navbar from "../../../components/Navbar";
-import PageWrapper from "../../../components/PageWrapper";
-import SectionSubtitle from "../../../components/SectionSubtitle";
-import SectionTitle from "../../../components/SectionTitle";
-import SectionWrapper from "../../../components/SectionWrapper";
+import Navbar from "@components/Navbar";
+import PageWrapper from "@components/PageWrapper";
+import SectionSubtitle from "@components/SectionSubtitle";
+import SectionTitle from "@components/SectionTitle";
+import SectionWrapper from "@components/SectionWrapper";
 import Bend23Description from "./sections/Bend23Description";
+import Loader from "@components/Loader";
+import ErrorBoundary from "@components/ErrorBoudary";
+import ErrorComponent from "@components/ErrorComponent";
+
 import SampleAudio from "./sections/SampleAudio";
 import ImageGallery from "./sections/ImageGallery";
 import FrontImage from "./sections/FrontImage";
-import Loader from "../../../components/Loader";
-import ErrorBoundary from "../../../components/ErrorBoudary";
-import ErrorComponent from "../../../components/ErrorComponent";
 const ThreeCanvas = lazy(() => import("./sections/Three"));
 
 export default function Bend23() {
