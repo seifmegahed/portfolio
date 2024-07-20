@@ -60,6 +60,21 @@ function FooterLinksSection(props: {
     </div>
   );
 }
+
+const GamesSection = {
+  title: "Games",
+  links: [
+    {
+      title: "Wordle",
+      path: "https://seifmegahed-wordle.web.app",
+    },
+    {
+      title: "Bouklao",
+      path: "https://bouklao.com",
+    },
+  ],
+};
+
 const LinksSection = {
   title: "Links",
   links: [
@@ -73,7 +88,7 @@ const LinksSection = {
 export default function Footer() {
   return (
     <footer className="bg-slate-700 p-10 w-full flex flex-col gap-10">
-      <div className="grid md:grid-cols-3 grid-cols-2 gap-x-8 gap-y-10 w-fit">
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-x-8 gap-y-10 w-fit">
         <FooterLinksSection
           sectionTitle="Home"
           links={navbarLinks
@@ -85,6 +100,13 @@ export default function Footer() {
           links={projects.map((project) => ({
             title: project.title,
             path: project.path,
+          }))}
+        />
+        <FooterLinksSection
+          sectionTitle="Games"
+          links={GamesSection.links.map((link) => ({
+            ...link,
+            href: true,
           }))}
         />
         <FooterLinksSection
