@@ -66,5 +66,6 @@ export const skillsData = {
     { title: "Solidworks", score: 80 },
     { title: "Blender", score: 30 },
     { title: "Figma", score: 50 },
+    { title: "Gimp", score: 50 },
   ],
 };

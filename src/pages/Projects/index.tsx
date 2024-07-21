@@ -9,8 +9,14 @@ import Bend23 from "./bend-23";
 import NedapWanda from "./nedap-wanda";
 import NedapLuna from "./nedap-luna";
 import SmallSizeHolland from "./small-size-holland";
+import Bouklao from "./bouklao";
+import Wordle from "./wordle";
+import FHIRPlayground from "./fhir-playground";
 
 export const projectsComponents = [
+  { component: <Bouklao />, path: "/bouklao" },
+  { component: <Wordle />, path: "/wordle" },
+  { component: <FHIRPlayground />, path: "/fhir-playground" },
   {
     component: <AzzasHandmade />,
     path: "/azzas-handmade",

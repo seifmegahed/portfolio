@@ -65,12 +65,12 @@ const GamesSection = {
   title: "Games",
   links: [
     {
-      title: "Wordle",
-      path: "https://seifmegahed-wordle.web.app",
-    },
-    {
       title: "Bouklao",
       path: "https://bouklao.com",
+    },
+    {
+      title: "Wordle",
+      path: "https://seifmegahed-wordle.web.app",
     },
   ],
 };

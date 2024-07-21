@@ -1,11 +1,39 @@
 {
   "projectsJSON": [
     {
+      "title": "Bouklao",
+      "path": "bouklao",
+      "year": 2024,
+      "description": "Web app chrome dino game clone built with React",
+      "tags": [
+        "Firebase",
+        "Firestore",
+        "TypeScript",
+        "React",
+        "Tailwind",
+        "Auth"
+      ]
+    },
+    {
+      "title": "Wordle",
+      "path": "wordle",
+      "year": 2024,
+      "description": "Wordle clone built with React",
+      "tags": ["TypeScript", "React", "Tailwind"]
+    },
+    {
+      "title": "FHIR Playground",
+      "path": "fhir-playground",
+      "year": 2024,
+      "description": "Web GUI to interact with a FHIR standard database",
+      "tags": ["TypeScript", "React", "Tailwind", "FHIR"]
+    },
+    {
       "title": "Azza's Handmade",
       "path": "azzas-handmade",
       "year": 2024,
       "description": "Web Store for handmade jewelry and accessories",
-      "tags": ["Firebase", "TypeScript", "React", "Tailwind CSS", "Auth"]
+      "tags": ["Firebase", "TypeScript", "React", "Tailwind", "Auth"]
     },
     {
       "title": "Bend 24",
@@ -72,7 +100,15 @@
       "path": "bend-23",
       "year": 2020,
       "description": "Audio delay pedal with a low frequency oscillator",
-      "tags": ["C/C++", "WaveTable", "PCB Design", "3D Modeling", "React", "TypeScript", "ThreeJS"]
+      "tags": [
+        "C/C++",
+        "WaveTable",
+        "PCB Design",
+        "3D Modeling",
+        "React",
+        "TypeScript",
+        "ThreeJS"
+      ]
     },
     {
       "title": "Nedap Wanda",

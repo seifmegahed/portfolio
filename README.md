@@ -2,6 +2,9 @@
 
 ## Todo
 **Projects**
+- [ ] Bouklao
+- [ ] Wordle
+- [ ] FHIR Playground
 - [x] Azza's Handmade
 - [x] Bend 24
 - [x] Electrosafe Warehouse
